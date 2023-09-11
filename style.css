@@ -196,10 +196,25 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 
-section{
-    height: 480px;
+/*post section */
+.post{
+    display: flex;
 }
 
+.post-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post-content{
+    margin: 30px;
+}
+
+.post-content img{
+    border-radius: 7px;
+    width: 370px;
+}
 
 
 #copyright{
