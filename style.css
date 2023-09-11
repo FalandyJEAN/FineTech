@@ -70,8 +70,8 @@
 }
 
 .navbar ul li:hover .dropdown_menu ul li{
-    width: 150px;
-    padding: 10px;
+    width: 100px;
+    padding: 15px;
 }
 
 .navbar #subscription{
