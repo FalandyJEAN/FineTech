@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/shorcut.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/16d512547d.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
     <title>FineTech-Blog</title>
 </head>
 <body>
@@ -49,13 +50,36 @@
                     </div>
                 </li>
             </ul> 
+
+            <div id="subscription">
+                <a href="#inscription" class="open-button" onclick="openForm()">JOIN OUR NEWSLETTER</a>
+                <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Fine<span>Tech</span></h1>
+                    <h2>JOIN US!</h2>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Save</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+                </div>
+            </div>
         </nav>
     </header>
-
-    <section>
-
+    <section id="search-section">
+        <form>   
+            <div class="search-container">
+                <input type="search" placeholder="SHEARCH SOME THINGS">
+                <i class="fas fa-search" onclick=alert("hello")></i>
+            </div>            
+        </form> 
     </section>
-
+    
 
     <footer>
         <div id="foot">

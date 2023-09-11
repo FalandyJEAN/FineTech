@@ -31,10 +31,6 @@
     position: relative;
 }
 
-.navbar ul li:last-child{
-    margin-right: 0;
-}
-
 .navbar ul li a{
     text-decoration: none;
     font-weight: bold;
@@ -58,6 +54,7 @@
 
 .dropdown_menu{
     display: none;
+    z-index: 1;
 }
 
 .navbar ul li:hover .dropdown_menu{
@@ -77,6 +74,123 @@
     width: 150px;
     padding: 10px;
 }
+
+.navbar #subscription{
+    display: flex;
+    margin-left: 80px;
+}
+
+#subscription a{
+    text-decoration: none;
+    font-weight: 5px;
+    color: black !important;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(203, 218, 244);
+    padding: 15px;
+}
+
+
+#myForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 330px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+
+#myForm h1, h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#myForm span{
+    color: rgb(69, 133, 236);
+}
+
+#myForm label {
+    display: block;
+    font-weight: bold;
+}
+
+
+#myForm input[type="text"],
+#myForm input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #4b6a9f;
+    border-radius: 5px;
+}
+
+#myForm button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#myForm .cancel {
+    background-color: #ccc;
+    color: white;
+    margin-left: 10px;
+}
+
+#subscription .open-button {
+    cursor: pointer;
+    transition: transform 0.14s ease;
+
+}
+
+
+#subscription .open-button:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+
+#search-section{
+    display: flex;
+    justify-content: center;
+}
+
+#search-section input[type=search]{
+    border-radius: 15px;
+    padding-left: 30px;
+    height: 40px;
+    width: 650px;
+    border-color:rgb(203, 218, 244);
+    margin-top: 10px;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-container input[type=search] {
+    padding-right: 30px;
+
+}
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+
+.search-container i {
+    position: absolute;
+    top: 60%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
 
 section{
     height: 480px;
