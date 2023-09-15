@@ -154,7 +154,10 @@
     transform: translateY(-5px) scale(1.05);
 }
 
+/*languages section*/
 
+
+/*Search section*/
 #search-section{
     display: flex;
     justify-content: center;
