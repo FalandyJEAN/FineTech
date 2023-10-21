@@ -1,0 +1,27 @@
+{
+    "nav_about": "ACERCA DE",
+    "nav_all_items": "ARTÍCULOS",
+    "nav_tutorials": "TUTORIALES",
+    "nav_linux": "LINUX",
+    "nav_android": "ANDROID",
+    "nav_windows": "WINDOWS",
+    "nav_categories": "CATEGORÍAS",
+    "nav_news": "NOTICIAS",
+    "nav_tools": "HERRAMIENTAS",
+    "nav_pricing": "PRECIO",
+    "nav_technology": "TECNOLOGÍA",
+    "nav_training": "FORMACIÓN",
+    "nav_docs": "DOCUMENTOS",
+    "nav_courses": "CURSOS",
+    "nav_webinar": "WEBINAR",
+    "subscribe_button": "¡Suscríbete!",
+    "subscribe_title": "¡ÚNETE A NOSOTROS!",
+    "subscribe_email": "Correo electrónico",
+    "subscribe_password": "Contraseña",
+    "subscribe_submit": "Suscribirse",
+    "subscribe_close": "Cerrar",
+    "search_placeholder": "BUSCAR ALGO",
+    "footer_build_by": "Creado por",
+    "footer_reserved": "Todos los derechos reservados."
+}
+  

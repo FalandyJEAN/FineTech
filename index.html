@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="images/shorcut.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/16d512547d.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
-    <title>FineTech-Blog</title>
+    <title translate="no">FineTech-Blog</title>
 </head>
 <body>
 
@@ -18,36 +18,36 @@
         </div>
         <nav class="navbar">
             <ul>
-                <li><a href="unavailable.html">ABOUT</a></li>
-                <li><a href="unavailable.html">ALL ITEMS</a></li>
+                <li><a id="nav-about" href="unavailable.html">ABOUT</a></li>
+                <li><a id="nav-all-items" href="unavailable.html">ALL ITEMS</a></li>
                 <li>
-                    <a href="#">TUTORIALS <i class="fa-solid fa-caret-down fa-xl" style="color: #ffffff;"></i></a>
+                    <a id="nav-tutorials" href="#">TUTORIALS <i class="fa-solid fa-caret-down fa-xl" style="color: #ffffff;"></i></a>
                     <div class="dropdown_menu">
                         <ul>
-                            <li><a href="#">LINUX</a></li>
-                            <li><a href="#">ANDROID</a></li>
-                            <li><a href="#">WINDOWS</a></li>
+                            <li><a id="nav-linux" href="#">LINUX</a></li>
+                            <li><a id="nav-android" href="#">ANDROID</a></li>
+                            <li><a id="nav-windows" href="#">WINDOWS</a></li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="#">CATEGORIES <i class="fa-solid fa-caret-down fa-xl" style="color: #ffffff;"></i></a>
+                    <a id="nav-categories" href="#">CATEGORIES <i class="fa-solid fa-caret-down fa-xl" style="color: #ffffff;"></i></a>
                     <div class="dropdown_menu">
                         <ul>
-                            <li><a href="#">NEWS</a></li>
-                            <li><a href="#">TOOLS</a></li>
-                            <li><a href="#">PRICING</a></li>
-                            <li><a href="#">TECHNOLOGY</a></li>
+                            <li><a id="nav-news" href="#">NEWS</a></li>
+                            <li><a id="nav-tools" href="#">TOOLS</a></li>
+                            <li><a id="nav-pricing" href="#">PRICING</a></li>
+                            <li><a id="nav-technology" href="#">TECHNOLOGY</a></li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="#">TRAINING <i class="fa-solid fa-caret-down fa-xl" style="color: #ffffff;"></i> </a>
+                    <a id="nav-training" href="#">TRAINING <i class="fa-solid fa-caret-down fa-xl" style="color: #ffffff;"></i> </a>
                     <div class="dropdown_menu">
                         <ul>
-                            <li><a href="#">DOCS</a></li>
-                            <li><a href="#">COURSES</a></li>
-                            <li><a href="#">WEBINAR</a></li>
+                            <li><a id="nav-docs" href="#">DOCS</a></li>
+                            <li><a id="nav-courses" href="#">COURSES</a></li>
+                            <li><a id="nav-webinar" href="#">WEBINAR</a></li>
                         </ul>
                     </div>
                 </li>
@@ -55,11 +55,11 @@
             </ul> 
 
             <div id="subscription">
-                <a href="#subscribe" class="open-button" onclick="openForm()">Subscribe!</a>
+                <a href="#subscribe" class="open-button" onclick="openForm()"><span id="subscribe-button">Subscribe!</span></a>
                 <div class="form-popup" id="myForm">
                 <form action="/action_page.php" class="form-container">
                     <h1 translate="no">Fine<span>Tech</span></h1>
-                    <h2>JOIN US!</h2>
+                    <h2><span id="subscribe-title">JOIN US!</span></h2>
 
                     <label for="email"><b>Email</b></label>
                     <input type="text" placeholder="Enter Email" name="email" required>
@@ -67,22 +67,23 @@
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
 
-                    <button type="submit" class="btn">Subscribe</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    <button type="submit" class="btn" id="subscribe-submit">Subscribe</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()" id="subscribe-close">Close</button>
                 </form>
                 </div>
             </div>
+            <select id="language-buttons" onchange="changeLanguage(this.value)">
+                <option value="english">English</option>
+                <option value="haitian-creole">Kreyol Ayisyen</option>
+                <option value="french">Francais</option>
+                <option value="spanish">Espanol</option>
+            </select>
         </nav>
     </header>
     
     <!--search section-->
     <section id="search-section">
-        <form>   
-            <div class="search-container">
-                <input type="search" placeholder="SHEARCH SOME THINGS">
-                <i class="fas fa-search"  class="search" onclick=""></i>
-            </div>            
-        </form> 
+        <embed src="https://bing.com">
     </section>
     
     <!--post section-->
@@ -94,7 +95,12 @@
                 <p>Date</p>
             </div>
             <div class="post-content">
-                <a href="#"><img src="images/download.jpeg" alt="Image"></a>
+                <a href="#"><img src="images/french.png" alt="Image"></a>
+                <h3>Post Test</h3>
+                <p>Date</p>
+            </div>
+            <div class="post-content">
+                <a href="#"><img src="images/spanish.png" alt="Image"></a>
                 <h3>Post Test</h3>
                 <p>Date</p>
             </div>
@@ -104,17 +110,12 @@
                 <p>Date</p>
             </div>
             <div class="post-content">
-                <a href="#"><img src="images/download.jpeg" alt="Image"></a>
+                <a href="#"><img src="images/english.png" alt="Image"></a>
                 <h3>Post Test</h3>
                 <p>Date</p>
             </div>
             <div class="post-content">
-                <a href="#"><img src="images/download.jpeg" alt="Image"></a>
-                <h3>Post Test</h3>
-                <p>Date</p>
-            </div>
-            <div class="post-content">
-                <a href="#"><img src="images/download.jpeg" alt="Image"></a>
+                <a href="#"><img src="images/haitian-creole.png" alt="Image"></a>
                 <h3>Post Test</h3>
                 <p>Date</p>
             </div>

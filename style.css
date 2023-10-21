@@ -70,7 +70,7 @@
 }
 
 .navbar ul li:hover .dropdown_menu ul li{
-    width: 100px;
+    width: 120px;
     padding: 15px;
 }
 
@@ -154,8 +154,33 @@
     transform: translateY(-5px) scale(1.05);
 }
 
-/*languages section*/
+/* Style pour les boutons de langue */
+#language-buttons {
+    width: 120px; 
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    appearance: none;
+    margin-left: 30px;
+}
 
+#language-buttons option {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 5px;
+}
+
+#language-buttons span {
+    margin-right: 5px;
+}
+
+#language-buttons img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
 
 /*Search section*/
 #search-section{
@@ -172,32 +197,10 @@
     margin-top: 10px;
 }
 
-.search-container {
-    position: relative;
-    display: inline-block;
+embed{
+    height: 500px;
+    width: 100%;
 }
-
-.search-container input[type=search] {
-    padding-right: 30px;
-
-}
-input[type="search"]::-webkit-search-cancel-button {
-    display: none;
-}
-
-
-.search-container i {
-    position: absolute;
-    top: 60%;
-    right: 0;
-    transform: translateY(-50%);
-    background-color: rgb(69, 133, 236);
-    color: white;
-    font-size: 30px;
-    border-radius: 0 15px 15px 0;
-    padding: 5px;
-}
-
 
 /*post section */
 .post{
