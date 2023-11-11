@@ -220,6 +220,7 @@ embed{
 .post-content img{
     border-radius: 7px;
     width: 370px;
+    background-color:gray;
 }
 
 
